@@ -39,37 +39,51 @@
           </div>
           <div class="hero-visual" aria-label="CB monogram graphic">
             <svg
-              width="220"
-              height="220"
-              viewBox="0 0 220 220"
+              class="hero-mark"
+              width="240"
+              height="240"
+              viewBox="0 0 240 240"
               role="img"
               aria-labelledby="monogram-title"
             >
-              <title id="monogram-title">CB monogram</title>
+              <title id="monogram-title">CB monogram with geometric accents</title>
               <defs>
-                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="#1f4fff" />
-                  <stop offset="50%" stop-color="#7a5cff" />
-                  <stop offset="100%" stop-color="#ff8d7f" />
+                <linearGradient
+                  id="hero-gradient"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
+                  <stop offset="0%" stop-color="#2855ff" />
+                  <stop offset="45%" stop-color="#7a5cff" />
+                  <stop offset="100%" stop-color="#ff9d8b" />
+                </linearGradient>
+                <linearGradient
+                  id="halo-gradient"
+                  x1="0%"
+                  y1="0%"
+                  x2="0%"
+                  y2="100%"
+                >
+                  <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+                  <stop offset="100%" stop-color="#ffffff" stop-opacity="0.4" />
                 </linearGradient>
               </defs>
-              <rect width="220" height="220" rx="40" fill="url(#gradient)" />
+              <rect class="mark-base" width="240" height="240" rx="48" />
+              <circle class="mark-orbit" cx="170" cy="70" r="36" />
+              <circle class="mark-orbit mark-orbit-secondary" cx="86" cy="164" r="42" />
               <path
-                d="M70 140V80c0-18 14-32 32-32h16c18 0 32 14 32 32 0 18-14 32-32 32h-22"
-                fill="none"
-                stroke="#fff"
-                stroke-width="12"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                class="mark-wave"
+                d="M36 150c28-26 72-32 106-6s62 26 88 6"
               />
-              <path
-                d="M150 140v-18c0-12-10-22-22-22H92"
-                fill="none"
-                stroke="#fff"
-                stroke-width="12"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
+              <g class="mark-lettering">
+                <path
+                  d="M80 158V96c0-20 16-36 36-36h18c20 0 36 16 36 36 0 20-16 36-36 36h-26"
+                />
+                <path d="M160 158v-20c0-14-12-26-26-26h-34" />
+              </g>
+              <circle class="mark-halo" cx="120" cy="120" r="94" />
             </svg>
           </div>
         </div>
